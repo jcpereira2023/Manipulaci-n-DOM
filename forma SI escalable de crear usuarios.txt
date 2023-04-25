@@ -1,0 +1,36 @@
+class Student {
+    constructor ({ 
+        name,
+        email,
+        username,
+        twitter = undefined,
+        instagram = undefined,
+        facebook = undefined,
+        apporvedCourses = [],
+        learningPaths =  [], 
+    })  {
+        this.name = "name";
+        this.email = "email"; 
+        this.username = "username";
+        this.socilaMedia = {
+            twitter,
+            instagram,
+            facebook,
+        };        
+        this.apporvedCourses = apporvedCourses;
+        this.learningPaths =  learningPaths;
+    }
+}
+
+const juan2 = Student({
+    name: "JuanDC",
+    username: "juandc",
+    email: "juanito@juanito.com",
+    twitter: "fjuandc"
+})
+const Miguelito2 = Student({
+    name: "Miguelito",
+    username: "miguelitofeliz",
+    email: "miguelitofeliz@juanito.com",
+    instagram : "miguelitofeliz"
+})
